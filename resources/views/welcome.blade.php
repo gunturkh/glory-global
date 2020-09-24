@@ -75,7 +75,7 @@
                 @foreach($top_items as $top_item)
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="height: 300px; width: 300px; background-size: cover"; /> <p></p>
+                            <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 300px; max-width: 300px; width: 100%; background-size: cover"; /> <p></p>
                             <h4 class="text-center font-weight-bold">{{ucfirst($top_item->name)}}</h3>
                             <p class="text-center">{{substr($top_item->description,0,65)}}...</p>
                             <hr />
@@ -211,9 +211,10 @@
         </div>
 
 
+        <!--
         <div class="row justify-content-center mt-3">
             <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
-        </div>
+        </div> -->
         
     </div>
     @endsection

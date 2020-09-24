@@ -70,15 +70,19 @@
             </div>
         </div>
     </div>
+    <!--
     <div class="container">
         <div class="row justify-content-center">
             <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
         </div>
     </div>
+    -->
     <div class="container">
         <div class="row justify-content-center">
             <center><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami">
-            <h1><a href="contact-us"><strong>Hubungi Kami Sekarang Juga!!</strong></a></h1></center>
+                <!-- <h1><a href="contact-us"><strong>Hubungi Kami Sekarang Juga!!</strong></a></h1> -->
+            </center>
+            <a href="{{route('contact-us')}}" style="margin-top: 20px"><button name="contact" class="btn btn-primary">HUBUNGI KAMI</button></a>
         </div>
     </div>
 </div>

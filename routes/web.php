@@ -253,6 +253,11 @@ Route::group(['middleware' => ['web']], function () {
 		'as' => 'delete-item',
 		'middleware' => 'auth',
 	]);
+
+	Route::get('/test', function()
+	{
+	    return view('test', ['name' => 'Andrew']);
+	});
 });
 
 
