@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/websites/dev.gloriglobalsukses.com
+
+    - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
