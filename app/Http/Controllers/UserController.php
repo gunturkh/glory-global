@@ -37,7 +37,7 @@ class UserController extends Controller
         $items = Item::orderBy('created_at', 'desc')->take(3)->get();
         $allitems = Item::orderBy('created_at', 'desc')->get();
         $products = Product::orderBy('created_at', 'desc')->get();
-        dump($products);
+        /* dump($products); */
         /* dump($allitems); */
         /* echo ($items); */
         return view('welcome')->with('products',$items);
