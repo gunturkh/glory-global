@@ -3,7 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/u9416201/public_html/public
     # - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
-    - /bin/cp -r * $DEPLOYPATH #copy all from root
-    - /bin/cp -r ./public/* $DEPLOYPATH/public_html/
+    # - /bin/cp -r * $DEPLOYPATH #copy all from root
+    - /bin/cp -r ./public/* $DEPLOYPATH
     # - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/js
     # - /bin/cp ./public/css/*.css $DEPLOYPATH/public_html/css
