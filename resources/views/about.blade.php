@@ -48,13 +48,13 @@
 </div>
 @stop
 
-@section('content')
-    <div class="mb-4 justify-content-center">
-            <div class="ubea-heading">
-                <h2 class="ubea-center text-center">Struktur Organisasi</h2>                    
-            </div>
-            <div class="justify-content-center">
-                <img src="{{ asset('contact/struktur.PNG') }}" alt="Struktur Organisasi" title="Struktur Organisasi" width="100%" />
-            </div>
-        </div>
-@endsection
+{{-- @section('content') --}}
+{{--     <div class="mb-4 justify-content-center"> --}}
+{{--             <div class="ubea-heading"> --}}
+{{--                 <h2 class="ubea-center text-center">Struktur Organisasi</h2> --}}                    
+{{--             </div> --}}
+{{--             <div class="justify-content-center"> --}}
+{{--                 <img src="{{ asset('contact/struktur.PNG') }}" alt="Struktur Organisasi" title="Struktur Organisasi" width="100%" /> --}}
+{{--             </div> --}}
+{{--         </div> --}}
+{{-- @endsection --}}
