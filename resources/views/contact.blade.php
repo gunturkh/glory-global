@@ -47,30 +47,6 @@
                     <small class="block" style="font-size: 14px"><a href="mailto:callistazahra@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">callistazahra@gloriglobalsukses.com</a></small>
                 </center>
             </div>
-            <div class="col-4">
-                <center class="card">
-                    <span class="font-weight-bold">PT Glori Global Sukses</span>
-                    <hr />
-                    <img class="image-responsive" src="{{url('contact/rayhan.jpg')}}" style="border-radius: 50%; max-height: 200px">
-                   <h4 class="contact-name">Rayhan Stevano</h4>
-                    <span class="font-italic font-weight-light">Marketing</span>
-                    <hr />
-                    <div style="font-size: 16px">(+62) 822 8801 6238</div>
-                    <small class="block" style="font-size: 14px"><a href="mailto:rayhanstevano@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">rayhanstevano@gloriglobalsukses.com</a></small>
-                </center>
-            </div>
-            <div class="col-4">
-                <center class="card">
-                    <span class="font-weight-bold">PT Glori Global Sukses</span>
-                    <hr />
-                    <img class="image-responsive" src="{{url('contact/farel.jpg')}}" style="border-radius: 50%; max-height: 200px">
-                   <h4 class="contact-name">Farel Alvino</h4>
-                    <span class="font-italic font-weight-light">Marketing</span>
-                    <hr />
-                    <div style="font-size: 16px">(+62) 853 7764 9193</div>
-                    <small class="block" style="font-size: 14px"><a href="mailto:rayhanstevano@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">farelalvino@gloriglobalsukses.com</a></small>
-                </center>
-            </div>
         </div>
         <div class="col">
             <table style="border-collapse:separate; border-spacing:0 9px; font-size: 18px; text-align: center; width: 100%">

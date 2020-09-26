@@ -2,6 +2,7 @@
 @section('title', 'Cara Bertransaksi')
 
 @section('content')
+@include('sidemenu')
 <div class="ubea-section mt-10" id="ubea-services" data-section="services">
     <div class="ubea-container">
         <div class="row">

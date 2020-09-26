@@ -52,14 +52,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
     </head>
-    <body>
+    <body onload="zoom()">
+    {{-- <body> --}}
         
     <div class="ubea-loader"></div>
     
@@ -112,7 +113,8 @@
 
     @yield('container')
 
-    <div class="container">
+    {{-- <div class="container"> --}}
+    <div style="padding: 20px;">
         @yield('content')
     </div>
 
@@ -142,14 +144,15 @@
     </footer>
     </div>
 
-    <div class="gototop js-top">
-        @foreach($products as $product)
-        <a href="{{ url('search-kategori/'.$product->slug)}}" alt="{{$product->slug}}" title="{{$product->name}}">
-            <i class="icon {{$product->icon}}"></i>
-        </a>
-        @endforeach
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-    </div>
+    {{-- @include('sidemenu') --}}
+    {{-- <div class="gototop js-top"> --}}
+    {{--     @foreach($products as $product) --}}
+    {{--     <a href="{{ url('search-kategori/'.$product->slug)}}" alt="{{$product->slug}}" title="{{$product->name}}"> --}}
+    {{--         <i class="icon {{$product->icon}}"></i> --}}
+    {{--     </a> --}}
+    {{--     @endforeach --}}
+    {{--     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> --}}
+    {{-- </div> --}}
     
     <!-- jQuery -->
     <script src="{{asset('js/jquery.min.js')}}"></script>
@@ -172,6 +175,12 @@
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/view-product.js')}}"></script>
 
+
+    <script type="text/javascript">
+            function zoom() {
+                document.body.style.zoom = "60%" 
+            }
+    </script>
     </body>
 </html>
 

@@ -51,6 +51,8 @@
               <option value="1" @if($product->top == 1) selected="selected" @endif>Top 1</option>
               <option value="2" @if($product->top == 2) selected="selected" @endif>Top 2</option>
               <option value="3" @if($product->top == 3) selected="selected" @endif>Top 3</option>
+              <option value="4" @if($product->top == 4) selected="selected" @endif>Top 4</option>
+              <option value="5" @if($product->top == 5) selected="selected" @endif>Top 5</option>
             </select>
             <div style="font-size: 12px;"><i>* Dilewati jika bukan merupakan item andalan</i></div>
             @error('top_product')

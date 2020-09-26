@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                        <li style="background-image: url(images/img_bg_1.jpg);">
+                        <li style="background-image: url(images/bg-1.png);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_2.png);">
+                        <li style="background-image: url(images/bg-2.jpeg);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_3.png);">
+                        <li style="background-image: url(images/bg-3.jpeg);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -37,26 +37,26 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_4.png);">
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/img_bg_5.png);">
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        {{-- <li style="background-image: url(images/img_bg_4.png);"> --}}
+                        {{--     <div class="overlay"></div> --}}
+                        {{--     <div class="container"> --}}
+                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
+                        {{--             <div class="slider-text-inner"> --}}
+                        {{--                 <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p> --}}
+                        {{--             </div> --}}
+                        {{--         </div> --}}
+                        {{--     </div> --}}
+                        {{-- </li> --}}
+                        {{-- <li style="background-image: url(images/img_bg_5.png);"> --}}
+                        {{--     <div class="overlay"></div> --}}
+                        {{--     <div class="container"> --}}
+                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
+                        {{--             <div class="slider-text-inner"> --}}
+                        {{--                 <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p> --}}
+                        {{--             </div> --}}
+                        {{--         </div> --}}
+                        {{--     </div> --}}
+                        {{-- </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -71,17 +71,22 @@
                 <h2 class="ubea-left">Perbandingan Harga</h2>
                 <p>Kami mengundang para pedagang yang baru memulai usaha dan ingin mengimport produk dari luar negeri.</p>
             </div>
-            <div class="row">
+            <div class="row" style="justify-content: center;">
                 @foreach($top_items as $top_item)
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 300px; max-width: 300px; width: 100%; background-size: cover"; /> <p></p>
-                            <h4 class="text-center font-weight-bold">{{ucfirst($top_item->name)}}</h3>
+                    <div class="col-md-2" style="margin: 10px;">
+                        <div class="card" style="height: 100%">
+                            <div style="max-height: 300px;">
+                                <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 245px; max-width: 245px; width: 100%; background-size: cover"; /> <p></p>
+                            </div>
+                            <h4 class="text-center font-weight-bold" style="flex-grow: 1;">{{ucfirst($top_item->name)}}</h3>
                             <p class="text-center">{{substr($top_item->description,0,65)}}...</p>
                             <hr />
-                            <h5 class="text-center">Harga Batam <br /><span style="color: #FF5126; font-weight: 600; font-size: 24px">@currency($top_item->price)</span></h5>
-                            <hr />
-                            <h5 class="text-center">Harga Jakarta <br /><span style="color: #FF5126; font-weight: 600; font-size: 24px">@currency($top_item->price2)</span></h5>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; justify-content: center;">
+                                <h6 class="text-center">Harga Batam <br /><span style="color: #FF5126; font-weight: 300; font-size: 20px">@currency($top_item->price)</span></h5>
+                                {{-- <hr /> --}}
+                                <h6 class="text-center">Harga Jakarta <br /><span style="color: #FF5126; font-weight: 300; font-size: 20px">@currency($top_item->price2)</span></h5>
+                            </div>
+                            <center><a href="{{url('lihat-produk/'.$top_item->slug)}}" class="btn btn-primary">Lihat</a></center>
                         </div>
                     </div>
                 @endforeach 
