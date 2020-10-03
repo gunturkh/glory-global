@@ -85,10 +85,12 @@
     };
 
     var offcanvasMenu = function() {
-        $("body").prepend('<div id="ubea-offcanvas" />');
-        $("body").prepend(
-            '<a href="#" class="js-ubea-nav-toggle ubea-nav-toggle"><i></i></a>'
-        );
+        if (!$("nav").hasClass("home")) {
+            $("body").prepend('<div id="ubea-offcanvas" />');
+            $("body").prepend(
+                '<a href="#" class="js-ubea-nav-toggle ubea-nav-toggle"><i></i></a>'
+            );
+        }
         var clone1 = $(".menu-1 > ul").clone();
         $("#ubea-offcanvas").append(clone1);
         var clone2 = $(".menu-2 > ul").clone();
@@ -430,4 +432,3 @@
 
 ga("create", "UA-10146041-21", "auto");
 ga("send", "pageview");
-

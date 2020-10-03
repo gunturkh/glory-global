@@ -699,7 +699,7 @@ figure {
     display: inline-block;
     zoom: 1;
     *display: inline;
-    color: #ff5126;
+    /* color: #ff5126; */
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -2292,12 +2292,108 @@ form label {
     position: relative;
 }
 
-#ubea-services .feature-left .icon i {
-    color: #cccccc !important;
-}
+/* #ubea-services .feature-left .icon i { */
+/*     color: #cccccc !important; */
+/* } */
 #ubea-services .feature-left h3 {
     color: #ff5126;
     font-size: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Custom style */
+
+.home {
+    top: 20;
+    color: #fff;
+    background-color: #000;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1001;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.home-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-home {
+    border-radius: 30px;
+}
+
+a.header-home {
+    color: #fff;
+}
+
+.home-logo-section {
+    background-color: #fff;
+    padding: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.home-logo a {
+    color: #000;
+    margin-left: 5px;
+    width: 150px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 769px) {
+    /* nav.header-home { */
+    /*     display: none; */
+    /* } */
+    .home-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .home-logo a {
+        font-size: 24px;
+        font-weight: 800;
+        width: auto;
+    }
+    .header-home {
+        color: #fff;
+        font-size: 12px;
+    }
+    .home-logo-section {
+        background-color: #fff;
+        padding: 5px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+    }
+    .home {
+        /* top: 20; */
+        /* color: #fff; */
+        /* background-color: #000; */
+        /* margin: auto; */
+        /* max-width: 600px; */
+        /* width: 100%; */
+        /* z-index: 1001; */
+        /* position: fixed; */
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        align-items: center;
+        /* border-radius: 50px; */
+    }
+}
+
+.fa-facebook-square {
+    color: #4c6ef6;
+}

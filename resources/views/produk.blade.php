@@ -1,5 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'Produk')
+@include('header')
 @section('container')
     <div id="ubea-hero" class="js-fullheight"  data-section="home">
         <div class="row justify-content-end" style="background-image: linear-gradient(orange,firebrick);">

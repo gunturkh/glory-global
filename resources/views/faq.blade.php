@@ -1,6 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'FAQ')
-
+@include('header')
 @section('container')
 <div class="ubea-section mt-10" id="ubea-faq" data-section="faq">
     <div class="ubea-container">

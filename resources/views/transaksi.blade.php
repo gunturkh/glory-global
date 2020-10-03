@@ -1,6 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'Cara Bertransaksi')
-
+@include('header')
 @section('content')
 @include('sidemenu')
 <div class="ubea-section mt-10" id="ubea-services" data-section="services">

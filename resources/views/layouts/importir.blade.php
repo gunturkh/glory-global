@@ -53,19 +53,21 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/779403cce7.js" crossorigin="anonymous"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
     </head>
-    <body onload="zoom()">
+    <body onload="zoom()" style="display: flex; justify-content: center; ">
     {{-- <body> --}}
         
     <div class="ubea-loader"></div>
     
     <div id="page">
-    @include('header')
+    {{-- @include('header') --}}
     {{-- <nav class="ubea-nav" role="navigation"> --}}
     {{--     <div class="ubea-container"> --}}
     {{--         <div class="row justify-content-center"> --}}
@@ -126,18 +128,21 @@
             <div class="row copyright">
                 <div class="col-md-12">
                     <p class="float-left">
-                        <small class="block" style="color: white">&copy; 2020 PT Glori Global Sukses. All Rights Reserved.</small> 
-                        <small class="block"><a href="{{url('login')}}">Login</a></small> 
+                        <small class="block" style="color: white; font-size: 1rem;">&copy; 2020 PT Glori Global Sukses. All Rights Reserved.</small> 
+                        <small class="block" style="font-size: 1rem;"><a href="{{url('login')}}">Login</a></small> 
                     </p>
                     <p class="float-right">
                         <ul class="ubea-social-icons float-right">
-                            <li><a href="https://instagram.com/gloglo.co.id?igshid=1adr2wokti7g" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><i class="icon-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/PT-Glori-Global-Sukses-100629498187326/" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://instagram.com/gloglo.co.id?igshid=1adr2wokti7g" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="/icons/png/044-instagram.png" style="height: 3rem; width: auto;"></a></li>
+                            <li><a href="https://www.facebook.com/PT-Glori-Global-Sukses-100629498187326/" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="/icons/png/024-facebook.png" style="height: 3rem; width: auto;"></a></li>
                             <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>
                             <li><a href="#"><i class="icon-google-with-circle"></i></a></li> -->
                         </ul>
                     </p>
                 </div>
+                <small class="block" style="color: black">
+                    Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" style="color: black;">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="color: black;"> www.flaticon.com</a>
+                </small>
             </div>
 
         </div>
@@ -153,7 +158,7 @@
     {{--     @endforeach --}}
     {{--     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a> --}}
     {{-- </div> --}}
-    
+
     <!-- jQuery -->
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <!-- jQuery Easing -->
