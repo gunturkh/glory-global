@@ -133,8 +133,8 @@
                     </p>
                     <p class="float-right">
                         <ul class="ubea-social-icons float-right">
-                            <li><a href="https://instagram.com/gloglo.co.id?igshid=1adr2wokti7g" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="/icons/png/044-instagram.png" style="height: 3rem; width: auto;"></a></li>
-                            <li><a href="https://www.facebook.com/PT-Glori-Global-Sukses-100629498187326/" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="/icons/png/024-facebook.png" style="height: 3rem; width: auto;"></a></li>
+                            <li><a href="https://instagram.com/gloglo.co.id?igshid=1adr2wokti7g" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="{{ asset('images/png/044-instagram.png')}}" style="height: 3rem; width: auto;"></a></li>
+                            <li><a href="https://www.facebook.com/PT-Glori-Global-Sukses-100629498187326/" target="_blank" alt="PT Glori Global Sukses" title="PT Glori Global Sukses"><img src="{{ asset('images/png/024-facebook.png')}}" style="height: 3rem; width: auto;"></a></li>
                             <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>
                             <li><a href="#"><i class="icon-google-with-circle"></i></a></li> -->
                         </ul>
