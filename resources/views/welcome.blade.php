@@ -118,7 +118,7 @@
 
         </div>
 
-        <div class="col mb-4">
+        <div class="col mb-4" style="max-width:1200px; margin: auto;">
             <div class="ubea-heading">
                 <h2 class="ubea-left">Testimonial</h2>
                 <p>Dibawah ini adalah beberapa pelanggan kami yang memberikan testimonial secara sukarela setelah menggunakan jasa PT. Glori Global Sukses</p>
@@ -135,18 +135,26 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                   </ol>
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="{{url('images/testi_1.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_2.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_3.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_4.jpg')}}" alt="Testimonial">
-                    </div>
+                    @foreach($testimony as $testi) 
+                        @if ($loop->first)
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{url('products/'.$testi->pictures)}}" alt="Testimonial">
+                            </div>
+                        @else
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{{url('products/'.$testi->pictures)}}" alt="Testimonial">
+                            </div>
+                        @endif
+                    @endforeach
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_2.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_3.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_4.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

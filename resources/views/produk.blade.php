@@ -67,7 +67,7 @@
             </div>
 
             <div class="col-md-2 product_category">
-                <div class="list-product-style d-none d-lg-block">
+                <div class="list-product-style d-none d-md-block">
                     <div class="dropdown">
                         @foreach($products as $product)
                         
@@ -87,7 +87,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="list-product-style d-lg-none">
+                <div class="list-product-style d-md-none">
                     <div class="dropdown"> 
                         @foreach($products as $product)
                             <div class="mainmenubtn" style="display: inline-block; cursor: pointer;" onclick="location.href='{{ url('search-kategori/'.$product->slug)}}'"><i class="icon {{$product->icon}}"></i></div>

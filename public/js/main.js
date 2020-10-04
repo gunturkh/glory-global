@@ -85,16 +85,18 @@
     };
 
     var offcanvasMenu = function() {
-        if (!$("nav").hasClass("home")) {
-            $("body").prepend('<div id="ubea-offcanvas" />');
-            $("body").prepend(
-                '<a href="#" class="js-ubea-nav-toggle ubea-nav-toggle"><i></i></a>'
-            );
-        }
+        // if (!$("nav").hasClass("home")) {
+        $("body").prepend('<div id="ubea-offcanvas" />');
+        $("body").prepend(
+            '<a href="#" class="js-ubea-nav-toggle ubea-nav-toggle"><i></i></a>'
+        );
+        // }
         var clone1 = $(".menu-1 > ul").clone();
         $("#ubea-offcanvas").append(clone1);
         var clone2 = $(".menu-2 > ul").clone();
         $("#ubea-offcanvas").append(clone2);
+        var clone3 = $(".menu-3 > *").clone();
+        $("#ubea-offcanvas").append(clone3);
 
         $("#ubea-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown");
         $("#ubea-offcanvas")
@@ -299,9 +301,12 @@
             return false;
         });
 
-        $(window).scroll(function() {
+        $("#page").scroll(function() {
             var $win = $(window);
-            if ($win.scrollTop() > 200) {
+            var $page = $("#page");
+            // console.log("wind: ", $win.scrollTop());
+            // console.log("page: ", $page.scrollTop());
+            if ($page.scrollTop() > 10) {
                 $(".js-top").addClass("active");
             } else {
                 $(".js-top").removeClass("active");

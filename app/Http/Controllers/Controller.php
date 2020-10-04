@@ -12,6 +12,7 @@ use App\Item;
 use App\Product;
 use App\ProductCategory;
 use App\ProductSubCategory;
+use App\Testimony;
 
 class Controller extends BaseController
 {

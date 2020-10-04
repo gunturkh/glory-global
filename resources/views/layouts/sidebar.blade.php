@@ -48,6 +48,13 @@
         </a>
       </li>
 
+      <!-- Nav Testimony - Pages Collapse Menu -->
+      <li class="nav-item {{\Request::is('item') ? 'active' : ''}}">
+        <a class="nav-link collapsed" href="{{url('testimony')}}">
+          <span>Testimoni</span>
+        </a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 

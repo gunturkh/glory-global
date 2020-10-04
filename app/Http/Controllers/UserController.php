@@ -7,6 +7,7 @@ use App\Product;
 use App\ProductCategory;
 use App\ProductSubCategory;
 use App\Item;
+use App\Testimony;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -37,10 +38,11 @@ class UserController extends Controller
         $items = Item::orderBy('created_at', 'desc')->take(3)->get();
         $allitems = Item::orderBy('created_at', 'desc')->get();
         $products = Product::orderBy('created_at', 'desc')->get();
+        $testimony = Testimony::orderBy('created_at')->get();
         /* dump($products); */
         /* dump($allitems); */
         /* echo ($items); */
-        return view('welcome')->with('products',$items);
+        return view('welcome')->with(compact( 'products','items', 'testimony' ));
     }
 
     public function getAccount()

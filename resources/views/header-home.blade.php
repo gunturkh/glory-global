@@ -6,7 +6,7 @@
                         <a href="{{url('welcome')}}">PT Glori Global Sukses</a>
                     </div>
                 </div>
-                <div style="display: flex; flex-flow: row; align-items: center; justify-content: center; ">
+                <div class="menu-3 home-nav-section">
                     <div style="padding: 20px"><a href="{{route('welcome')}}" class="external header-home">Beranda</a></div>
                     <div style="padding: 20px"><a href="{{route('about')}}" class="external header-home">Tentang Kami</a></div>
                     <div style="padding: 20px"><a href="{{route('layanan')}}" class="external header-home">Layanan</a></div>
@@ -16,7 +16,7 @@
                     <div style="padding: 20px"><a href="{{route('contact-us')}}" class="external header-home">Kontak</a></div>
                 <div style="padding: 20px">
                     <form action="{{route('search')}}" method="get" style="margin: 0;">
-                        <div class="input-group">
+                        <div class="menu-1 input-group">
                             <input type="text" name="keyword" class="form-control" placeholder="Ex: tas wanita" aria-label="Ex: tas wanita" aria-describedby="keyword" required="required" style="height: auto; font-size: 14px">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="submit" style="margin-bottom: 0px; padding: 0px 10px"><i class="icon-search"></i></button>

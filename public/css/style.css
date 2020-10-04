@@ -222,7 +222,7 @@ figure {
 }
 
 .product_category {
-    margin-top: 105px;
+    margin-top: 150px;
     padding-right: 0;
     padding-left: 15px;
     float: right;
@@ -1252,7 +1252,7 @@ form label {
 
 .gototop {
     position: fixed;
-    bottom: 20px;
+    bottom: 200px;
     left: 20px;
     z-index: 999;
     opacity: 0;
@@ -1266,7 +1266,7 @@ form label {
     visibility: visible;
 }
 .gototop a {
-    width: 50px;
+    width: auto;
     height: 50px;
     display: table;
     background: rgba(0, 0, 0, 0.5);
@@ -1279,6 +1279,7 @@ form label {
 }
 .gototop a i {
     height: 50px;
+    padding: 0px 20px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -1376,8 +1377,8 @@ form label {
 
 .ubea-nav-toggle {
     position: fixed;
-    right: 0px;
-    top: 10px;
+    right: 30px;
+    top: 30px;
     z-index: 21;
     padding: 6px 0 0 0;
     display: block;
@@ -2308,8 +2309,8 @@ form label {
     top: 20;
     color: #fff;
     background-color: #000;
-    margin: auto;
-    max-width: 1200px;
+    margin: 0px 40px;
+    max-width: 1300px;
     width: 100%;
     z-index: 1001;
     position: fixed;
@@ -2339,6 +2340,13 @@ a.header-home {
     padding: 30px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+
+.home-nav-section {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-logo a {
@@ -2372,28 +2380,71 @@ a.header-home {
     .home-logo-section {
         background-color: #fff;
         padding: 5px;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         border-bottom-left-radius: 0;
         width: 100%;
     }
     .home {
-        /* top: 20; */
-        /* color: #fff; */
-        /* background-color: #000; */
-        /* margin: auto; */
-        /* max-width: 600px; */
-        /* width: 100%; */
-        /* z-index: 1001; */
-        /* position: fixed; */
+        top: 0;
         display: flex;
-        /* justify-content: space-between; */
+        /* width: auto; */
         flex-direction: column;
         align-items: center;
-        /* border-radius: 50px; */
+    }
+    .home-nav-section {
+        /* display: flex; */
+        display: none;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
+/* @media screen and (max-width: 570px) { */
+/*     .home { */
+/*         display: none; */
+/*         /1* display: flex; *1/ */
+/*         min-width: 300px; */
+/*         flex-direction: column; */
+/*         align-items: center; */
+/*     } */
+
+/*     .home-nav-section { */
+/*         display: flex; */
+/*         flex-flow: row wrap; */
+/*         align-items: center; */
+/*         justify-content: center; */
+/*     } */
+
+/*     .home-nav-section { */
+/*         display: flex; */
+/*         flex-flow: row wrap; */
+/*         align-items: center; */
+/*         justify-content: center; */
+/*     } */
+
+/*     .home-logo-section { */
+/*         background-color: #fff; */
+/*         padding: 5px; */
+/*         border-top-left-radius: 50px; */
+/*         border-top-right-radius: 50px; */
+/*         border-bottom-left-radius: 0; */
+/*         width: 100%; */
+/*     } */
+/* } */
+
 .fa-facebook-square {
     color: #4c6ef6;
+}
+
+.hide-sidebar-menu {
+    display: none;
+    padding: 10px;
+}
+
+i:hover + .hide-sidebar-menu {
+    display: block;
+    color: white;
+    font-size: 1rem;
 }
