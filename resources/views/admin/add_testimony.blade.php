@@ -14,7 +14,7 @@
     <div class="row justify-content-center">
     {{-- enctype attribute is important if your form contains file upload --}}
     {{-- Please check https://www.w3schools.com/tags/att_form_enctype.asp for further info --}}
-        <form class="m-2" method="post" action="/add-testimony" enctype="multipart/form-data">
+        <form class="m-2" method="post"  enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                <label for="name">File Name</label>
@@ -25,6 +25,7 @@
                 <input id="picture" type="file" name="picture">
             </div>
             <button type="submit" class="btn btn-dark d-block w-75 mx-auto">Upload</button>
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
         </form>
     </div>
     {{-- @include('components.errors') --}}

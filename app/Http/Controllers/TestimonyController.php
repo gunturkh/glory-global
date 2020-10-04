@@ -40,7 +40,7 @@ class TestimonyController extends Controller
                     'pictures' => $picture,
                 ]);
 
-                return redirect()->back()->with('message','Sukses! Testimony baru berhasil dimasukkan kedalam database!');
+                return redirect()->route('testimony')->with('message','Sukses! Testimony baru berhasil dimasukkan kedalam database!');
             }
         }
         abort(500, 'Could not upload image :(');
