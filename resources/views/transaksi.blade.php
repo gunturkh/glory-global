@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-magnifying-glass"></i>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-new"></i>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-cycle"></i>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-price-ribbon"></i>
@@ -80,7 +80,7 @@
     -->
     <div class="container">
         <div class="row justify-content-center">
-            <center><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami">
+            <center style="width: 100%;"><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami" >
                 <!-- <h1><a href="contact-us"><strong>Hubungi Kami Sekarang Juga!!</strong></a></h1> -->
             </center>
             <a href="{{route('contact-us')}}" style="margin-top: 20px"><button name="contact" class="btn btn-primary">HUBUNGI KAMI</button></a>

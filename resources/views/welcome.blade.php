@@ -66,8 +66,8 @@
     </div>
 
     @section('content')
-    <div class="col justify-content-center" style="margin-top: 50px;">
-        <div class="col mb-4">
+    <div class="col justify-content-center" style="padding: 50px; background: linear-gradient(-135deg,#e0e6ed,#e0e6ed,#fff7fa);">
+        <div class="col mb-5">
             <div class="ubea-heading">
                 <h2 class="ubea-left">Perbandingan Harga</h2>
                 <p>Kami mengundang para pedagang yang baru memulai usaha dan ingin mengimport produk dari luar negeri.</p>
@@ -75,7 +75,7 @@
             <div class="row" style="justify-content: center;">
                 @foreach($top_items as $top_item)
                     <div class="col-md-2" style="margin: 10px;">
-                        <div class="card" style="height: 100%">
+                        <div class="card" style="height: 100%; ">
                             <div style="max-height: 300px;">
                                 <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 245px; max-width: 245px; width: 100%; background-size: cover"; /> <p></p>
                             </div>
@@ -118,7 +118,18 @@
 
         </div>
 
-        <div class="col mb-4" style="max-width:1200px; margin: auto;">
+
+
+        <!--
+        <div class="row justify-content-center mt-3">
+            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
+        </div> -->
+        
+    </div>
+    @endsection
+
+    @section('content_2')
+        <div class="col mb-5" style="margin: auto; padding: 50px;">
             <div class="ubea-heading">
                 <h2 class="ubea-left">Testimonial</h2>
                 <p>Dibawah ini adalah beberapa pelanggan kami yang memberikan testimonial secara sukarela setelah menggunakan jasa PT. Glori Global Sukses</p>
@@ -127,7 +138,7 @@
                 <span class="float-right"><i class="text-warning icon-star2"></i></span>
                 <span class="float-right"><i class="text-warning icon-star2"></i></span> -->
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-width: 70vw; margin: auto; box-shadow: 0 24px 64px rgba(46,46,61,0.24);">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -223,14 +234,6 @@
                 </div> -->
             </div>
         </div>
-
-
-        <!--
-        <div class="row justify-content-center mt-3">
-            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
-        </div> -->
-        
-    </div>
     @endsection
 
     @section('container_2')

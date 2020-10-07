@@ -116,9 +116,11 @@
     @yield('container')
 
     {{-- <div class="container"> --}}
-    <div style="padding: 20px;">
-        @yield('content')
-    </div>
+    {{-- <div style="padding: 20px;"> --}}
+    @yield('content')
+    {{-- </div> --}}
+
+    @yield('content_2')
 
     @yield('container_2')
 
