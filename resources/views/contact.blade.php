@@ -15,18 +15,6 @@
                 <center class="card" style="max-width: 400px; margin: 20px auto;">
                     <span class="font-weight-bold">PT Glori Global Sukses</span>
                     <hr />
-                    <img class="image-responsive" src="{{url('contact/marco.jpg')}}" style="border-radius: 50%; height: 300px; width: auto; object-fit: cover; object-position: top;">
-                   <h4 class="contact-name">Marco Martinus</h4>
-                    <span class="font-italic font-weight-light">Marketing Exclusive</span>
-                    <hr />
-                    <div style="font-size: 16px">(+62) 812 6849 1376</div>
-                    <small class="block" style="font-size: 14px"><a href="mailto:macromartinus@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">macromartinus@gloriglobalsukses.com</a></small>
-                </center>
-            </div>
-            <div class="col-sm-4">
-                <center class="card" style="max-width: 400px; margin: 20px auto;">
-                    <span class="font-weight-bold">PT Glori Global Sukses</span>
-                    <hr />
                     <img class="image-responsive" src="{{url('contact/naomi.jpg')}}" style="border-radius: 50%; height: 300px; width: auto; object-fit: cover; object-position: top;">
                     <h4 class="contact-name">Naomi Adista</h4>
                     <span class="font-italic font-weight-light">Marketing Exclusive</span>
@@ -45,6 +33,32 @@
                     <hr />
                     <div style="font-size: 16px">(+62) 813 7178 7680</div>
                     <small class="block" style="font-size: 14px"><a href="mailto:callistazahra@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">callistazahra@gloriglobalsukses.com</a></small>
+                </center>
+            </div>
+            <div class="col-sm-4">
+                <center class="card" style="max-width: 400px; margin: 20px auto;">
+                    <span class="font-weight-bold">PT Glori Global Sukses</span>
+                    <hr />
+                    <img class="image-responsive" src="{{url('contact/felicia-2.jpg')}}" style="border-radius: 50%; height: 300px; width: auto; object-fit: cover; object-position: top;">
+                   <h4 class="contact-name">Felicia Eliyana</h4>
+                    <span class="font-italic font-weight-light">Marketing Exclusive</span>
+                    <hr />
+                    <div style="font-size: 16px">(+62) 821 8191 4097</div>
+                    <small class="block" style="font-size: 14px"><a href="mailto:feliciaeliyana@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">macromartinus@gloriglobalsukses.com</a></small>
+                </center>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12">
+                <center class="card" style="max-width: 350px; margin: 20px auto;">
+                    <span class="font-weight-bold">PT Glori Global Sukses</span>
+                    <hr />
+                    <img class="image-responsive" src="{{url('contact/davin.jpeg')}}" style="border-radius: 50%; height: 300px; width: auto; object-fit: cover; object-position: top;">
+                   <h4 class="contact-name">Davin Anggara</h4>
+                    <span class="font-italic font-weight-light">Marketing Representative - Jakarta Utara</span>
+                    <hr />
+                    <div style="font-size: 16px">(+62) 822 6894 7572</div>
+                    {{-- <small class="block" style="font-size: 14px"><a href="mailto:feliciaeliyana@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">macromartinus@gloriglobalsukses.com</a></small> --}}
                 </center>
             </div>
         </div>
