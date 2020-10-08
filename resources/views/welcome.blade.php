@@ -138,7 +138,7 @@
                 <span class="float-right"><i class="text-warning icon-star2"></i></span>
                 <span class="float-right"><i class="text-warning icon-star2"></i></span> -->
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-width: 70vw; margin: auto; box-shadow: 0 24px 64px rgba(46,46,61,0.24);">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-responsive" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

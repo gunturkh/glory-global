@@ -2359,6 +2359,12 @@ a.header-home {
     font-size: 12px;
 }
 
+.carousel-responsive {
+    max-width: 70vw;
+    margin: auto;
+    box-shadow: 0 24px 64px rgba(46, 46, 61, 0.24);
+}
+
 @media screen and (max-width: 769px) {
     /* nav.header-home { */
     /*     display: none; */
@@ -2401,6 +2407,11 @@ a.header-home {
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
+    }
+    .carousel-responsive {
+        max-width: 100%;
+        margin: auto;
+        box-shadow: 0 24px 64px rgba(46, 46, 61, 0.24);
     }
 }
 
