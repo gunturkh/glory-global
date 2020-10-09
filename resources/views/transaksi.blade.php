@@ -71,13 +71,11 @@
             </div>
         </div>
     </div>
-    <!--
     <div class="container">
         <div class="row justify-content-center">
-            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
+            <center><img src="{{ asset('images/new-how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
         </div>
     </div>
-    -->
     <div class="container">
         <div class="row justify-content-center">
             <center style="width: 100%;"><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami" >
