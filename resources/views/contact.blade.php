@@ -68,7 +68,7 @@
                     <td colspan="2">
                         <span class="icon">
                             <i class="icon-map" style="font-size: 30px; color: firebrick;"></i>
-                        </span> PT Glori Global Sukses <br /> Ruko Taman Niaga, Sukajadi, Batam Kota, Kepri - Indonesia
+                        </span> PT Glori Global Sukses <br /> Ruko Puri Selebriti Blok A No 9 Batam - Kepulauan Riau
                     </td>
                 </tr>
                 <tr>
