@@ -27,8 +27,7 @@
                 <div class="ubea-heading">
                     <h2 class="ubea-left">Visi</h2>
                 </div>
-                <p>* Sebagai perusahaan yang menjadi jembatan importir bagi pelaku usaha<br />
-                * Transaksi dilakukan secara hitam diatas putih<p>
+                <p>* Sebagai perusahaan yang menjadi jembatan importir bagi pelaku usaha<br /><p>
             </div>
         </div>
     </div>
