@@ -234,6 +234,15 @@
                 </div> -->
             </div>
         </div>
+        <div class="col mb-5" style="margin: auto; padding: 50px; display: flex; justify-content: center;">
+            <div class="ubea-heading">
+                <h2 class="ubea-left">Cara Import</h2>
+            <video width="100%" height="auto" autoplay muted controls>
+              <source src="{{url('images/video prosedur.mp4')}}" type="video/mp4">
+            </video>
+            </div>
+        </div>
+
     @endsection
 
     @section('container_2')
