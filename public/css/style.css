@@ -2350,6 +2350,7 @@ a.header-home {
     flex-flow: row;
     align-items: center;
     justify-content: center;
+    font-size: 19px;
 }
 
 .home-logo a {
@@ -2407,6 +2408,7 @@ a.header-home {
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
+        font-size: 19px;
     }
     .carousel-responsive {
         max-width: 100%;
