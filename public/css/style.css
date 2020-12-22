@@ -2313,7 +2313,7 @@ form label {
     color: #fff;
     background-color: #000;
     margin: 0px 40px;
-    max-width: 1300px;
+    max-width: 1500px;
     width: 100%;
     z-index: 1001;
     position: fixed;
@@ -2340,7 +2340,7 @@ a.header-home {
 
 .home-logo-section {
     background-color: #fff;
-    padding: 30px;
+    padding: 15px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
 }
@@ -2351,13 +2351,16 @@ a.header-home {
     align-items: center;
     justify-content: center;
     font-size: 19px;
+    width: 100%;
+    margin-left: 25px;
 }
 
 .home-logo a {
     color: #000;
     margin-left: 5px;
-    width: 150px;
-    font-size: 12px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .carousel-responsive {

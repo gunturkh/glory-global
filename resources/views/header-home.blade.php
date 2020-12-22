@@ -1,8 +1,8 @@
     <nav  role="navigation" class="home">
 
                 <div class="home-logo-section">
-                    <div class="home-logo">
-                        <img src="{{asset('images/logo.jpg')}}" alt="Logo" />
+                    <div class="home-logo" >
+                        <img src="{{asset('images/logo.jpg')}}" alt="Logo" style="height: 60px;"/>
                         <a href="{{url('welcome')}}">PT Glori Global Sukses</a>
                     </div>
                 </div>
