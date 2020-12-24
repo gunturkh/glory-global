@@ -1,7 +1,8 @@
 @extends('layouts.importir')
 @section('title', 'Cara Bertransaksi')
-
+@include('header')
 @section('content')
+@include('sidemenu')
 <div class="ubea-section mt-10" id="ubea-services" data-section="services">
     <div class="ubea-container">
         <div class="row">
@@ -24,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-magnifying-glass"></i>
@@ -35,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-new"></i>
@@ -46,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-cycle"></i>
@@ -57,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 animate-box" data-animate-effect="fadeIn">
+            <div class="col-md-10  " data-animate-effect="fadeIn">
                 <div class="feature-left">
                     <span class="icon">
                         <i class="icon-price-ribbon"></i>
@@ -70,16 +71,14 @@
             </div>
         </div>
     </div>
-    <!--
     <div class="container">
         <div class="row justify-content-center">
-            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
+            <center><img src="{{ asset('images/new-how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
         </div>
     </div>
-    -->
     <div class="container">
         <div class="row justify-content-center">
-            <center><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami">
+            <center style="width: 100%;"><img src="{{ asset('images/contact-us.jpg')}}" width="70%" title="Hubungi Kami" alt="Hubungi Kami" >
                 <!-- <h1><a href="contact-us"><strong>Hubungi Kami Sekarang Juga!!</strong></a></h1> -->
             </center>
             <a href="{{route('contact-us')}}" style="margin-top: 20px"><button name="contact" class="btn btn-primary">HUBUNGI KAMI</button></a>

@@ -1,6 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'FAQ')
-
+@include('header')
 @section('container')
 <div class="ubea-section mt-10" id="ubea-faq" data-section="faq">
     <div class="ubea-container">
@@ -18,7 +18,7 @@
                     <h3>Apa itu PT Glori Global Sukses?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p>PT. Global Glori sukses bergerak di bidang importir (orang atau lembaga perantara dagang yang mendatangkan barang dari luar negeri)</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                     <h3>Dimana lokasi PT Glori Global Sukses?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p>Batam, Kota Batam, Ruko Taman Niaga Blok B No.10</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     <h3>Apa kelebihan import bersama PT Glori Global Sukses?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p> * Transaksi aman, mudah dan terpercaya <br />
                             * Harga barang identik lebih murah dari pasaran di Indonesia <br />
                             * Apabila barang yang dikirim tidak sesuai dengan pesanan / rusak, akan kami tanggung sepenuhnya, dengan syarat dan ketentuan harus adanya video unboxing
@@ -55,7 +55,7 @@
                     <h3>Produk apa saja yang dapat diimport oleh PT Glori Global Sukses?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p>Hampir semua produk bisa diimpor</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <h3>Apakah ada biaya tambahan lainnya selain biaya import?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p>Kami tidak memungut biaya apapun selain biaya ongkir dari Batam / Jakarta ke alamat penerima</p>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     <h3>Bagaimana jika produk yang diterima rusak atau tidak sesuai pesanan?</h3>
                 </div>
                 <div class="ubea-accordion-content">
-                    <div class="inner">
+                    <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
                         <p>Apabila ada produk yang rusak ataupun tidak sesuai dengan pesanan, akan kami tanggung sepenuhnya dengan syarat dan ketentuan harus adanya video unboxing</p>
                     </div>
                 </div>

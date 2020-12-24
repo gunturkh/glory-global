@@ -1,5 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'Beranda')
+@include('header-home')
 @section('container')
     <div id="ubea-hero" class="js-fullheight"  data-section="home">
         <div class="row justify-content-center" style="background-image: linear-gradient(orange,firebrick);">
@@ -7,7 +8,7 @@
                 <div class="row">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                        <li style="background-image: url(images/img_bg_1.jpg);">
+                        <li style="background-image: url(images/bg-1.png);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -17,7 +18,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_2.png);">
+                        <li style="background-image: url(images/bg-2.jpeg);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -27,7 +28,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_3.png);">
+                        <li style="background-image: url(images/bg-3.jpeg);">
                             <div class="overlay"></div>
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
@@ -37,26 +38,26 @@
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/img_bg_4.png);">
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/img_bg_5.png);">
-                            <div class="overlay"></div>
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        {{-- <li style="background-image: url(images/img_bg_4.png);"> --}}
+                        {{--     <div class="overlay"></div> --}}
+                        {{--     <div class="container"> --}}
+                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
+                        {{--             <div class="slider-text-inner"> --}}
+                        {{--                 <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p> --}}
+                        {{--             </div> --}}
+                        {{--         </div> --}}
+                        {{--     </div> --}}
+                        {{-- </li> --}}
+                        {{-- <li style="background-image: url(images/img_bg_5.png);"> --}}
+                        {{--     <div class="overlay"></div> --}}
+                        {{--     <div class="container"> --}}
+                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
+                        {{--             <div class="slider-text-inner"> --}}
+                        {{--                 <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p> --}}
+                        {{--             </div> --}}
+                        {{--         </div> --}}
+                        {{--     </div> --}}
+                        {{-- </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -65,23 +66,28 @@
     </div>
 
     @section('content')
-    <div class="col justify-content-center" style="margin-top: 50px;">
-        <div class="col mb-4">
+    <div class="col justify-content-center" style="padding: 50px; background: linear-gradient(-135deg,#e0e6ed,#e0e6ed,#fff7fa);">
+        <div class="col mb-5">
             <div class="ubea-heading">
                 <h2 class="ubea-left">Perbandingan Harga</h2>
                 <p>Kami mengundang para pedagang yang baru memulai usaha dan ingin mengimport produk dari luar negeri.</p>
             </div>
-            <div class="row">
+            <div class="row" style="justify-content: center;">
                 @foreach($top_items as $top_item)
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 300px; max-width: 300px; width: 100%; background-size: cover"; /> <p></p>
-                            <h4 class="text-center font-weight-bold">{{ucfirst($top_item->name)}}</h3>
+                    <div class="col-md-2" style="margin: 10px;">
+                        <div class="card" style="height: 100%; ">
+                            <div style="max-height: 300px;">
+                                <img src="{{url('products/'.$top_item->filename)}}" class="img-responsive mx-auto d-block" alt="icon-bag" title="{{$top_item->name}}" style="max-height: 245px; max-width: 245px; width: 100%; background-size: cover"; /> <p></p>
+                            </div>
+                            <h4 class="text-center font-weight-bold" style="flex-grow: 1;">{{ucfirst($top_item->name)}}</h3>
                             <p class="text-center">{{substr($top_item->description,0,65)}}...</p>
                             <hr />
-                            <h5 class="text-center">Harga Batam <br /><span style="color: #FF5126; font-weight: 600; font-size: 24px">@currency($top_item->price)</span></h5>
-                            <hr />
-                            <h5 class="text-center">Harga Jakarta <br /><span style="color: #FF5126; font-weight: 600; font-size: 24px">@currency($top_item->price2)</span></h5>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; justify-content: center;">
+                                <h6 class="text-center">Harga Batam <br /><span style="color: #FF5126; font-weight: 300; font-size: 20px">@currency($top_item->price)</span></h5>
+                                {{-- <hr /> --}}
+                                <h6 class="text-center">Harga Jakarta <br /><span style="color: #FF5126; font-weight: 300; font-size: 20px">@currency($top_item->price2)</span></h5>
+                            </div>
+                            <center><a href="{{url('lihat-produk/'.$top_item->slug)}}" class="btn btn-primary">Lihat</a></center>
                         </div>
                     </div>
                 @endforeach 
@@ -112,7 +118,18 @@
 
         </div>
 
-        <div class="col mb-4">
+
+
+        <!--
+        <div class="row justify-content-center mt-3">
+            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
+        </div> -->
+        
+    </div>
+    @endsection
+
+    @section('content_2')
+        <div class="col mb-5" style="margin: auto; padding: 50px;">
             <div class="ubea-heading">
                 <h2 class="ubea-left">Testimonial</h2>
                 <p>Dibawah ini adalah beberapa pelanggan kami yang memberikan testimonial secara sukarela setelah menggunakan jasa PT. Glori Global Sukses</p>
@@ -121,7 +138,7 @@
                 <span class="float-right"><i class="text-warning icon-star2"></i></span>
                 <span class="float-right"><i class="text-warning icon-star2"></i></span> -->
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-responsive" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -129,18 +146,26 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                   </ol>
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="{{url('images/testi_1.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_2.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_3.jpg')}}" alt="Testimonial">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="{{url('images/testi_4.jpg')}}" alt="Testimonial">
-                    </div>
+                    @foreach($testimony as $testi) 
+                        @if ($loop->first)
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{url('products/'.$testi->pictures)}}" alt="Testimonial">
+                            </div>
+                        @else
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{{url('products/'.$testi->pictures)}}" alt="Testimonial">
+                            </div>
+                        @endif
+                    @endforeach
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_2.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_3.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
+                    {{-- <div class="carousel-item"> --}}
+                    {{--   <img class="d-block w-100" src="{{url('images/testi_4.jpg')}}" alt="Testimonial"> --}}
+                    {{-- </div> --}}
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -209,14 +234,15 @@
                 </div> -->
             </div>
         </div>
+        <div class="col mb-5" style="margin: auto; padding: 50px; display: flex; justify-content: center;">
+            <div class="ubea-heading">
+                <h2 class="ubea-left">Cara Import</h2>
+            <video width="100%" height="auto" autoplay muted controls>
+              <source src="{{url('images/video prosedur.mp4')}}" type="video/mp4">
+            </video>
+            </div>
+        </div>
 
-
-        <!--
-        <div class="row justify-content-center mt-3">
-            <center><img src="{{ asset('images/how-to.jpg') }}" width="90%" title="Cara Bertransaksi" alt="Cara Bertransaksi"></center>
-        </div> -->
-        
-    </div>
     @endsection
 
     @section('container_2')

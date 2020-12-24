@@ -254,10 +254,46 @@ Route::group(['middleware' => ['web']], function () {
 		'middleware' => 'auth',
 	]);
 
-	Route::get('/test', function()
-	{
-	    return view('test', ['name' => 'Andrew']);
-	});
+	/* Route::get('/testimony', function() */
+	/* { */
+	/*     return view('testimony', ['name' => 'Andrew']); */
+	/* }); */
+
+	Route::get('testimony', [
+		'uses' => 'TestimonyController@viewTestimonies',
+		'as' => 'testimony',
+		'middleware' => 'auth'
+	]);
+
+	Route::get('add-testimony', [
+		'uses' => 'TestimonyController@getAddTestimony',
+		'as' => 'add_testimony',
+		'middleware' => 'auth'
+	]);
+
+	Route::post('add-testimony', [
+		'uses' => 'TestimonyController@addTestimony',
+		'as' => 'add_testimony',
+		'middleware' => 'auth'
+	]);
+
+	Route::post('delete-testimony', [
+		'uses' => 'TestimonyController@deleteTestimony',
+		'as' => 'delete-testimony',
+		'middleware' => 'auth',
+	]);
+
+	Route::get('update-testimony/{testimony_id}', [
+		'uses' => 'TestimonyController@getUpdateTestimony',
+		'as' => 'update-testimony',
+		'middleware' => 'auth'
+	]);
+
+	Route::post('update-testimony/{testimony_id}', [
+		'uses' => 'TestimonyController@postUpdateTestimony',
+		'as' => 'update-testimony',
+		'middleware' => 'auth'
+	]);
 });
 
 

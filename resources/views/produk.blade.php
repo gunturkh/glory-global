@@ -1,5 +1,6 @@
 @extends('layouts.importir')
 @section('title', 'Produk')
+@include('header')
 @section('container')
     <div id="ubea-hero" class="js-fullheight"  data-section="home">
         <div class="row justify-content-end" style="background-image: linear-gradient(orange,firebrick);">
@@ -66,7 +67,7 @@
             </div>
 
             <div class="col-md-2 product_category">
-                <div class="list-product-style d-none d-lg-block">
+                <div class="list-product-style d-none d-md-block">
                     <div class="dropdown">
                         @foreach($products as $product)
                         
@@ -86,7 +87,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="list-product-style d-lg-none">
+                <div class="list-product-style d-md-none">
                     <div class="dropdown"> 
                         @foreach($products as $product)
                             <div class="mainmenubtn" style="display: inline-block; cursor: pointer;" onclick="location.href='{{ url('search-kategori/'.$product->slug)}}'"><i class="icon {{$product->icon}}"></i></div>
@@ -146,12 +147,14 @@
                         <figure>
                           <img src="{{url('products/'.$item->filename)}}" alt="Image" class="image-responsive" style="height:auto; max-width: 100%; border-radius: 10px;">
                         </figure>
-                        <h4 style="font-weight: 400; color: #666; "><center>{{strtoupper($item->name)}}</center></h4>
+                        <h4 style="font-weight: 400; color: #666; flex-grow: 1; "><center>{{strtoupper($item->name)}}</center></h4>
                         <!-- <span class="badge badge-secondary">LAKU KERAS</span>
                         <span class="badge badge-secondary">STOCK TERBATAS</span> -->
                         <!-- <p style="font-size: 10px"><center>{{str_limit($item->description, 100, '...')}}</center></p> -->
-                        <div style="color:#666;">Batam: <p class="price-card">@currency($item->price)</p></div>
-                        <div style="color:#666;">Jakarta: <p class="price-card">@currency($item->price2)</p></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; justify-content: center; flex-grow: 1;">
+                            <div style="color:#666; text-align: center;">Batam: <p class="price-card">@currency($item->price)</p></div>
+                            <div style="color:#666; text-align: center;">Jakarta: <p class="price-card">@currency($item->price2)</p></div>
+                        </div>
                         <center><a href="{{url('lihat-produk/'.$item->slug)}}" class="btn btn-primary">Lihat</a></center>
                     </div>
                 </div>
@@ -175,9 +178,11 @@
                 <div class="col-md-3 mb-4">
                     <div class="card">
                         <img src="{{url('products/'.$other->filename)}}" alt="Image" class="image-responsive" style="height:auto; max-width: 100%; border-radius: 10px;">
-                        <p style="font-weight: 400; color: #666; "><center>{{strtoupper($other->name)}}</center></p>
-                        <div style="color:#666;">Batam: <p class="price-card">@currency($other->price)</p></div>
-                        <div style="color:#666;">Jakarta: <p class="price-card">@currency($other->price2)</p></div>
+                        <p style="font-weight: 400; color: #666; flex-grow: 1; "><center>{{strtoupper($other->name)}}</center></p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; justify-content: center; flex-grow: 1;">
+                            <div style="color:#666; text-align: center;">Batam: <p class="price-card">@currency($other->price)</p></div>
+                            <div style="color:#666; text-align: center;">Jakarta: <p class="price-card">@currency($other->price2)</p></div>
+                        </div>
                         <center><a href="{{url('lihat-produk/'.$other->slug)}}" class="btn btn-primary">Lihat</a></center>
                     </div>
                 </div>
