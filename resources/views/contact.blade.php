@@ -20,7 +20,7 @@
           <span class="font-italic font-weight-light">Branch Manager - Jakarta Utara</span>
           <hr />
           <div style="font-size: 16px">(+62) 822 6894 7572</div>
-          {{-- <small class="block" style="font-size: 14px"><a href="mailto:feliciaeliyana@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">macromartinus@gloriglobalsukses.com</a></small> --}}
+          <small class="block" style="font-size: 14px"><a href="mailto:davinanggara@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">davinanggara@gloriglobalsukses.com</a></small>
         </center>
       </div>
     </div>
@@ -86,7 +86,7 @@
           <span class="font-italic font-weight-light">Marketing Exclusive</span>
           <hr />
           <div style="font-size: 16px">(+62) 812 7634 6588</div>
-          <small class="block" style="font-size: 14px"><a href="mailto:info@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">info@gloriglobalsukses.com</a></small>
+          <small class="block" style="font-size: 14px"><a href="mailto:fianpranatha@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">fianpranatha@gloriglobalsukses.com</a></small>
         </center>
       </div>
       <div class="col-sm-4">
@@ -98,7 +98,7 @@
           <span class="font-italic font-weight-light">Marketing Exclusive</span>
           <hr />
           <div style="font-size: 16px">(+62) 852 7784 4252</div>
-          <small class="block" style="font-size: 14px"><a href="mailto:info@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">info@gloriglobalsukses.com</a></small>
+          <small class="block" style="font-size: 14px"><a href="mailto:sandracarren@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">sandracarren@gloriglobalsukses.com</a></small>
         </center>
       </div>
       {{--
@@ -124,7 +124,7 @@
         <span class="font-italic font-weight-light">Marketing Exclusive</span>
         <hr />
         <div style="font-size: 16px">(+62) 813 6590 5168</div>
-        <small class="block" style="font-size: 14px"><a href="mailto:info@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">info@gloriglobalsukses.com</a></small>
+        <small class="block" style="font-size: 14px"><a href="mailto:christianpangalila@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">christianpangalila@gloriglobalsukses.com</a></small>
       </center>
     </div>
   </div>
