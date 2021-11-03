@@ -30,7 +30,7 @@
         </div>
         <div class="ubea-accordion-content">
           <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
-            <p>Ruko Puri Selebriti Blok A No.09,Jl. Tengku Sulung, Batu Besar, Kecamatan Nongsa, Kota Batam,Kepulauan Riau, 29464</p>
+            <p>Ruko Puri Selebriti Blok A No.09, Jl. Tengku Sulung, Batu Besar, Kecamatan Nongsa, Kota Batam, Kepulauan Riau, 29464</p>
           </div>
         </div>
       </div>
