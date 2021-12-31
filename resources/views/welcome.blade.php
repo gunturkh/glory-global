@@ -238,7 +238,7 @@
             <div class="ubea-heading">
                 <h2 class="ubea-left">Cara Import</h2>
             <video width="100%" height="auto" autoplay muted controls>
-              <source src="{{url('images/video prosedur.mp4')}}" type="video/mp4">
+              <source src="{{url('images/OFFICE GLOGLO.mp4')}}" type="video/mp4">
             </video>
             </div>
         </div>
