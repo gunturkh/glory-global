@@ -2,38 +2,58 @@
 @section('title', 'Beranda')
 @include('header-home')
 @section('container')
-    <div id="ubea-hero" class="js-fullheight"  data-section="home">
-        <div class="row justify-content-center" style="background-image: linear-gradient(orange,firebrick);">
-            <div class="col-md-8" style="padding: 0">
-                <div class="row">
+    <div id="ubea-hero" class="js-fullheight"  data-section="home" >
+        <div class="row justify-content-center" style="background-image: linear-gradient(orange,firebrick); height: 100%; padding-top: 120px;">
+            <div class="col" style="padding: 0">
+                <div class="row justify-content-center">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                        <li style="background-image: url(images/bg-1.png);">
-                            <div class="overlay"></div>
+                        <li style="background-image: url(images/BANNER1.jpg);">
+                            <!-- <div class="overlay"></div> -->
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 30px">PT. Glori Global Sukses adalah perusahaan yang bergerak di jasa importir membantu pelanggan mencari, negosiasi, memasukkan barang dari luar negeri ke Indonesia.</p>
+                                        <!-- <p style="color:#fff; font-size: 30px">PT. Glori Global Sukses adalah perusahaan yang bergerak di jasa importir membantu pelanggan mencari, negosiasi, memasukkan barang dari luar negeri ke Indonesia.</p> -->
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/bg-2.jpeg);">
-                            <div class="overlay"></div>
+                        <li style="background-image: url(images/BANNER2.jpg);">
+                            <!-- <div class="overlay"></div> -->
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Cita cita dan semangat harus dimiliki untuk memulai dan mengembangkan usaha</p>
+                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(images/bg-3.jpeg);">
-                            <div class="overlay"></div>
+                        <li style="background-image: url(images/BANNER3.jpg);">
+                            <!-- <div class="overlay"></div> -->
                             <div class="container">
                                 <div class="col text-center js-fullheight slider-text">
                                     <div class="slider-text-inner">
-                                        <p style="color:#fff; font-size: 42px">Mulailah dari tempatmu berada. Gunakan yang kau punya. Lakukan yang kau bisa <br /> - Arthur Ashe</p>
+                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/BANNER4.jpg);">
+                            <!-- <div class="overlay"></div> -->
+                            <div class="container">
+                                <div class="col text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner">
+                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(images/BANNER5.jpg);">
+                            <!-- <div class="overlay"></div> -->
+                            <div class="container">
+                                <div class="col text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner">
+                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
                                     </div>
                                 </div>
                             </div>

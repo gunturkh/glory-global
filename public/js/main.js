@@ -1,23 +1,23 @@
-(function() {
+(function () {
     "use strict";
 
     var isMobile = {
-        Android: function() {
+        Android: function () {
             return navigator.userAgent.match(/Android/i);
         },
-        BlackBerry: function() {
+        BlackBerry: function () {
             return navigator.userAgent.match(/BlackBerry/i);
         },
-        iOS: function() {
+        iOS: function () {
             return navigator.userAgent.match(/iPhone|iPad|iPod/i);
         },
-        Opera: function() {
+        Opera: function () {
             return navigator.userAgent.match(/Opera Mini/i);
         },
-        Windows: function() {
+        Windows: function () {
             return navigator.userAgent.match(/IEMobile/i);
         },
-        any: function() {
+        any: function () {
             return (
                 isMobile.Android() ||
                 isMobile.BlackBerry() ||
@@ -28,17 +28,17 @@
         }
     };
 
-    var fullHeight = function() {
+    var fullHeight = function () {
         if (!isMobile.any()) {
-            $(".js-fullheight").css("height", 700);
-            $(window).resize(function() {
-                $(".js-fullheight").css("height", 700);
+            $(".js-fullheight").css("height", 900);
+            $(window).resize(function () {
+                $(".js-fullheight").css("height", 900);
             });
         }
     };
 
-    var mobileMenuOutsideClick = function() {
-        $(document).click(function(e) {
+    var mobileMenuOutsideClick = function () {
+        $(document).click(function (e) {
             var container = $("#ubea-offcanvas, .js-ubea-nav-toggle");
             if (
                 !container.is(e.target) &&
@@ -52,15 +52,15 @@
         });
     };
 
-    var header = function() {
+    var header = function () {
         $(".header-fixed").css("padding-top", $(".ubea-nav").height());
     };
 
-    var navigation = function() {
+    var navigation = function () {
         $("body").on(
             "click",
             '#ubea-offcanvas ul a:not([class="external"]), .main-nav a:not([class="external"])',
-            function(event) {
+            function (event) {
                 var section = $(this).data("nav-section");
                 if ($('[data-section="' + section + '"]').length) {
                     $("html, body").animate(
@@ -84,7 +84,7 @@
         );
     };
 
-    var offcanvasMenu = function() {
+    var offcanvasMenu = function () {
         // if (!$("nav").hasClass("home")) {
         $("body").prepend('<div id="ubea-offcanvas" />');
         $("body").prepend(
@@ -105,7 +105,7 @@
 
         // Hover dropdown menu on mobile
         $(".offcanvas-has-dropdown")
-            .mouseenter(function() {
+            .mouseenter(function () {
                 var $this = $(this);
 
                 $this
@@ -113,7 +113,7 @@
                     .find("ul")
                     .slideDown(500, "easeOutExpo");
             })
-            .mouseleave(function() {
+            .mouseleave(function () {
                 var $this = $(this);
                 $this
                     .removeClass("active")
@@ -121,7 +121,7 @@
                     .slideUp(500, "easeOutExpo");
             });
 
-        $(window).resize(function() {
+        $(window).resize(function () {
             if ($("body").hasClass("offcanvas")) {
                 $("body").removeClass("offcanvas");
                 $(".js-ubea-nav-toggle").removeClass("active");
@@ -130,10 +130,10 @@
     };
 
     // Reflect scrolling in navigation
-    var navActive = function(section) {
+    var navActive = function (section) {
         var $el = $(".main-nav > ul");
         $el.find("li").removeClass("active");
-        $el.each(function() {
+        $el.each(function () {
             $(this)
                 .find('a[data-nav-section="' + section + '"]')
                 .closest("li")
@@ -141,11 +141,11 @@
         });
     };
 
-    var navigationSection = function() {
+    var navigationSection = function () {
         var $section = $("div[data-section]");
 
         $section.waypoint(
-            function(direction) {
+            function (direction) {
                 if (direction === "down") {
                     navActive($(this.element).data("section"));
                 }
@@ -156,21 +156,21 @@
         );
 
         $section.waypoint(
-            function(direction) {
+            function (direction) {
                 if (direction === "up") {
                     navActive($(this.element).data("section"));
                 }
             },
             {
-                offset: function() {
+                offset: function () {
                     return -$(this.element).height() + 155;
                 }
             }
         );
     };
 
-    var burgerMenu = function() {
-        $("body").on("click", ".js-ubea-nav-toggle", function(event) {
+    var burgerMenu = function () {
+        $("body").on("click", ".js-ubea-nav-toggle", function (event) {
             var $this = $(this);
 
             if ($("body").hasClass("offcanvas")) {
@@ -183,10 +183,10 @@
         });
     };
 
-    var contentWayPoint = function() {
+    var contentWayPoint = function () {
         var i = 0;
         $(".animate-box").waypoint(
-            function(direction) {
+            function (direction) {
                 if (
                     direction === "down" &&
                     !$(this.element).hasClass("animated-fast")
@@ -194,11 +194,11 @@
                     i++;
 
                     $(this.element).addClass("item-animate");
-                    setTimeout(function() {
-                        $("body .animate-box.item-animate").each(function(k) {
+                    setTimeout(function () {
+                        $("body .animate-box.item-animate").each(function (k) {
                             var el = $(this);
                             setTimeout(
-                                function() {
+                                function () {
                                     var effect = el.data("animate-effect");
                                     if (effect === "fadeIn") {
                                         el.addClass("fadeIn animated-fast");
@@ -225,16 +225,16 @@
         );
     };
 
-    var dropdown = function() {
+    var dropdown = function () {
         $(".has-dropdown")
-            .mouseenter(function() {
+            .mouseenter(function () {
                 var $this = $(this);
                 $this
                     .find(".dropdown")
                     .css("display", "block")
                     .addClass("animated-fast fadeInUpMenu");
             })
-            .mouseleave(function() {
+            .mouseleave(function () {
                 var $this = $(this);
 
                 $this
@@ -244,7 +244,7 @@
             });
     };
 
-    var owlCarousel = function() {
+    var owlCarousel = function () {
         var owl = $(".owl-carousel-carousel");
         owl.owlCarousel({
             items: 3,
@@ -286,8 +286,8 @@
         });
     };
 
-    var goToTop = function() {
-        $(".js-gotop").on("click", function(event) {
+    var goToTop = function () {
+        $(".js-gotop").on("click", function (event) {
             event.preventDefault();
 
             $("html, body").animate(
@@ -301,7 +301,7 @@
             return false;
         });
 
-        $("#page").scroll(function() {
+        $("#page").scroll(function () {
             var $win = $(window);
             var $page = $("#page");
             // console.log("wind: ", $win.scrollTop());
@@ -315,22 +315,22 @@
     };
 
     // Loading page
-    var loaderPage = function() {
+    var loaderPage = function () {
         $(".ubea-loader").fadeOut("slow");
     };
 
-    var counter = function() {
+    var counter = function () {
         $(".js-counter").countTo({
-            formatter: function(value, options) {
+            formatter: function (value, options) {
                 return value.toFixed(options.decimals);
             }
         });
     };
 
-    var counterWayPoint = function() {
+    var counterWayPoint = function () {
         if ($("#ubea-counter").length > 0) {
             $("#ubea-counter").waypoint(
-                function(direction) {
+                function (direction) {
                     if (
                         direction === "down" &&
                         !$(this.element).hasClass("animated")
@@ -344,8 +344,8 @@
         }
     };
 
-    var accordion = function() {
-        $(".ubea-accordion-heading").on("click", function(event) {
+    var accordion = function () {
+        $(".ubea-accordion-heading").on("click", function (event) {
             var $this = $(this);
 
             $this
@@ -361,21 +361,21 @@
         });
     };
 
-    var sliderMain = function() {
+    var sliderMain = function () {
         $("#ubea-hero .flexslider").flexslider({
             animation: "fade",
             slideshowSpeed: 5000,
             directionNav: true,
-            start: function() {
-                setTimeout(function() {
+            start: function () {
+                setTimeout(function () {
                     $(".slider-text").removeClass("animated fadeInUp");
                     $(".flex-active-slide")
                         .find(".slider-text")
                         .addClass("animated fadeInUp");
                 }, 500);
             },
-            before: function() {
-                setTimeout(function() {
+            before: function () {
+                setTimeout(function () {
                     $(".slider-text").removeClass("animated fadeInUp");
                     $(".flex-active-slide")
                         .find(".slider-text")
@@ -388,7 +388,7 @@
             "height",
             $(window).height() / 4
         );
-        $(window).resize(function() {
+        $(window).resize(function () {
             $("#ubea-hero .flexslider .slides > li").css(
                 "height",
                 $(window).height() / 4
@@ -396,7 +396,7 @@
         });
     };
 
-    $(function() {
+    $(function () {
         fullHeight();
         mobileMenuOutsideClick();
         header();
@@ -415,11 +415,11 @@
     });
 })();
 
-(function(i, s, o, g, r, a, m) {
+(function (i, s, o, g, r, a, m) {
     i["GoogleAnalyticsObject"] = r;
     (i[r] =
         i[r] ||
-        function() {
+        function () {
             (i[r].q = i[r].q || []).push(arguments);
         }),
         (i[r].l = 1 * new Date());
