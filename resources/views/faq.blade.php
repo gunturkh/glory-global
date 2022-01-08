@@ -43,7 +43,7 @@
           <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
             <p> * Transaksi aman, mudah dan terpercaya <br />
               * Harga barang identik lebih murah dari pasaran di Indonesia <br />
-              * Apabila barang yang dikirim tidak sesuai dengan pesanan / rusak, akan kami tanggung sepenuhnya, dengan syarat dan ketentuan harus adanya video unboxing
+              * Apabila barang yang dikirim tidak sesuai dengan pesanan, akan kami tanggung sepenuhnya, dengan syarat dan ketentuan harus adanya video unboxing
             </p>
           </div>
         </div>
@@ -74,11 +74,11 @@
       <div class="ubea-accordion">
         <div class="ubea-accordion-heading">
           <div class="icon"><i class="icon-cross"></i></div>
-          <h3>Bagaimana jika produk yang diterima rusak atau tidak sesuai pesanan?</h3>
+          <h3>Bagaimana jika produk yang diterima tidak sesuai pesanan?</h3>
         </div>
         <div class="ubea-accordion-content">
           <div class="inner" style="color: black; background: linear-gradient(90deg, #ff5126 0%,#ed8f03 100% );">
-            <p>Apabila ada produk yang rusak ataupun tidak sesuai dengan pesanan, akan kami tanggung sepenuhnya dengan syarat dan ketentuan harus adanya video unboxing</p>
+            <p>Apabila ada produk yang tidak sesuai dengan pesanan, akan kami tanggung sepenuhnya dengan syarat dan ketentuan harus adanya video unboxing jelas.</p>
           </div>
         </div>
       </div>

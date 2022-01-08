@@ -17,7 +17,7 @@
           <hr />
           <img class="image-responsive" src="{{url('contact/davin.jpeg')}}" style="border-radius: 50%; height: 300px; width: auto; object-fit: cover; object-position: top;">
           <h4 class="contact-name">Davin Anggara</h4>
-          <span class="font-italic font-weight-light">Branch Manager - Jakarta Utara</span>
+          <span class="font-italic font-weight-light">Branch Manager - Jakarta Barat</span>
           <hr />
           <div style="font-size: 16px">(+62) 822 6894 7572</div>
           <small class="block" style="font-size: 14px"><a href="mailto:davinanggara@gloriglobalsukses.com?Subject=Inquiry%20on%20Importir" target="_top">davinanggara@gloriglobalsukses.com</a></small>

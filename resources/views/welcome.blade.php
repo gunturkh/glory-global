@@ -4,83 +4,65 @@
 @section('container')
     <div id="ubea-hero" class="js-fullheight"  data-section="home" >
         <div class="row justify-content-center" style="background-image: linear-gradient(orange,firebrick); height: 100%; padding-top: 120px;">
-            <div class="col" style="padding: 0">
-                <div class="row justify-content-center">
+            <div class="col-md-8" style="padding: 0">
+                <div class="row">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                        <li style="background-image: url(images/BANNER1.jpg);">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <!-- <p style="color:#fff; font-size: 30px">PT. Glori Global Sukses adalah perusahaan yang bergerak di jasa importir membantu pelanggan mencari, negosiasi, memasukkan barang dari luar negeri ke Indonesia.</p> -->
+                            <li style="background-image: url('{{asset('images/img_bg_1.jpg')}}')">
+                                <div class="overlay"></div>
+                                <div class="container">
+                                    <div class="col text-center js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <p style="color:#fff; font-size: 30px">PT. Glori Global Sukses adalah perusahaan yang bergerak di jasa importir membantu pelanggan mencari, negosiasi, memasukkan barang dari luar negeri ke Indonesia.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/BANNER2.jpg);">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                            </li>
+                            <li style="background-image: url('{{asset('images/img_bg_2.jpg')}}')">
+                                <div class="overlay"></div>
+                                <div class="container">
+                                    <div class="col text-center js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <p style="color:#fff; font-size: 42px">Cita cita dan semangat harus dimiliki untuk memulai dan mengembangkan usaha</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/BANNER3.jpg);">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                            </li>
+                            <li style="background-image: url('{{asset('images/img_bg_3.jpg')}}')">
+                                <div class="overlay"></div>
+                                <div class="container">
+                                    <div class="col text-center js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <p style="color:#fff; font-size: 42px">Mulailah dari tempatmu berada. Gunakan yang kau punya. Lakukan yang kau bisa <br /> - Arthur Ashe</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/BANNER4.jpg);">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                            </li>
+                            <li style="background-image: url('{{asset('images/img_bg_4.png')}}')">
+                                <div class="overlay"></div>
+                                <div class="container">
+                                    <div class="col text-center js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/BANNER5.jpg);">
-                            <!-- <div class="overlay"></div> -->
-                            <div class="container">
-                                <div class="col text-center js-fullheight slider-text">
-                                    <div class="slider-text-inner">
-                                        <!-- <p style="color:#fff; font-size: 42px"> </p> -->
+                            </li>
+                            <li style="background-image: url('{{asset('images/img_bg_5.png')}}')">
+                                <div class="overlay"></div>
+                                <div class="container">
+                                    <div class="col text-center js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        {{-- <li style="background-image: url(images/img_bg_4.png);"> --}}
-                        {{--     <div class="overlay"></div> --}}
-                        {{--     <div class="container"> --}}
-                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
-                        {{--             <div class="slider-text-inner"> --}}
-                        {{--                 <p style="color:#fff; font-size: 42px">Visi tanpa  eksekusi adalah halusinasi <br /> - Henry ford</p> --}}
-                        {{--             </div> --}}
-                        {{--         </div> --}}
-                        {{--     </div> --}}
-                        {{-- </li> --}}
-                        {{-- <li style="background-image: url(images/img_bg_5.png);"> --}}
-                        {{--     <div class="overlay"></div> --}}
-                        {{--     <div class="container"> --}}
-                        {{--         <div class="col text-center js-fullheight slider-text"> --}}
-                        {{--             <div class="slider-text-inner"> --}}
-                        {{--                 <p style="color:#fff; font-size: 42px">Modal bisa dicari, Keahlian bisa dibeli, Cita-cita dan semangat tidak bisa dibeli</p> --}}
-                        {{--             </div> --}}
-                        {{--         </div> --}}
-                        {{--     </div> --}}
-                        {{-- </li> --}}
+                            </li>
                         </ul>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -256,9 +238,17 @@
         </div>
         <div class="col mb-5" style="margin: auto; padding: 50px; display: flex; justify-content: center;">
             <div class="ubea-heading">
-                <h2 class="ubea-left">Cara Import</h2>
+                <h2 class="ubea-left">Office Tour</h2>
             <video width="100%" height="auto" autoplay muted controls>
               <source src="{{url('images/OFFICE GLOGLO.mp4')}}" type="video/mp4">
+            </video>
+            </div>
+        </div>
+        <div class="col mb-5" style="margin: auto; padding: 50px; display: flex; justify-content: center;">
+            <div class="ubea-heading">
+                <h2 class="ubea-left">Kelebihan Gloglo</h2>
+            <video width="100%" height="auto" autoplay muted controls>
+              <source src="{{url('images/GLOGLO MARCO.mp4')}}" type="video/mp4">
             </video>
             </div>
         </div>
